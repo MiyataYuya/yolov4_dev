@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "${localWorkspaceFolderBasename}",
+	"name": "yolov4_devcon",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerFile": "../docker/Dockerfile",
 	"runArgs": [
@@ -12,8 +12,8 @@
 	],
 	"mounts": [
 		{
-			"source": "${localWorkspaceFolder}",
-			"target": "${containerWorkspaceFolder}",
+			"source": "/mnt/d/dataset/",
+			"target": "${containerWorkspaceFolder}/datasets/",
 			"type": "bind"
 		}
 	]
